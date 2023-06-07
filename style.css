@@ -1,0 +1,191 @@
+* {
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root {
+    font-size: 62.5%;
+    --ff: 'Roboto', sans-serif;
+}
+
+
+
+
+#app {
+    max-width: 112rem;
+    margin: 0 auto;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 11.5rem;
+    align-items: center;
+    
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+
+}
+
+.search input{
+    border: none;
+    width: 46.2rem;
+    background-color: #06181C;
+    border-radius: .4rem;
+    height: 4.8rem;
+    color:#E1E1E6;
+}
+
+
+
+
+.search input::placeholder {
+    padding: 0 0 0 1.6rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.6rem;
+
+}
+
+.search button {
+    border: none;
+    background-image: url(img/FavoritesButton.svg);
+    width: 17rem;
+    height: 4.8rem;
+    object-fit: cover;
+    
+
+}
+
+.search button:hover {
+    background-image: url(img/FavoritesButtonHover.svg);
+    transition: all 400ms ease;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8.7rem;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 4rem auto;
+    font-size: 1.25em;
+    border-top-left-radius: 0.35rem;
+    border-top-right-radius: 0.35rem;
+    border-bottom-right-radius: 0.35rem;
+    border-bottom-left-radius: 0.35rem;
+    overflow: hidden;
+}
+
+table tr {
+  border: 2px solid #4A808C;
+}
+  
+  
+  
+  table th {
+    font-family:  var(--ff);
+
+    background: #092D38;
+    text-align: left;
+    font-weight: bold;
+    color: #E1E1E6;
+    font-size: 1.8rem;
+    padding: 1.5rem 1.5rem 1.5rem 4rem; 
+  }
+  
+  table th:first-child, table td:first-child {
+    border-top-left-radius: .4rem;
+    width: 50.2rem;
+  }
+
+  table th:nth-child(2), table td:nth-child(2) {
+    width: 22rem;
+  }
+  
+  table th:nth-child(3),table td:nth-child(3) {
+    width: 22rem;
+  }
+
+  
+  
+  table th:last-child, table td:last-child(4) {
+    border-top-right-radius: .4rem;
+    
+  }
+  table tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) div, tbody tr:nth-child(odd) h1, tbody tr:nth-child(odd) a{
+    background-color: rgba(6, 22, 27, 0.5);
+  } 
+  
+  table tbody tr:nth-child(even) td, tbody tr:nth-child(even) div, tbody tr:nth-child(even) h1, tbody tr:nth-child(even) a {
+    background-color: #06161B;
+  }
+  
+  
+ 
+
+  table td {
+    font-family: var(--ff);
+    padding: 2.4rem 0 2.4rem 4rem;
+    color:#E1E1E6;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+   
+  table td:first-child {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    
+  }
+   table td:last-child {
+      color: #F75A68;
+      cursor: pointer;
+
+
+   }
+   table td:last-child:hover {
+    color:red;
+    transition: all 0.3s step-end;
+   }
+
+  
+
+  table td img {
+    object-fit: cover;
+    width: 5rem;
+    border-radius: 50%;
+  }
+
+  table td div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color: #E1E1E6;
+    
+  }
+
+  table td  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  
+  
+  }
+
+  table td  span {
+    font-size: 2rem;
+    font-weight: 400;
+  
+  }
